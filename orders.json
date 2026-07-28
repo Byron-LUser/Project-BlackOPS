@@ -1,0 +1,16 @@
+[
+    [
+        {
+            "name": "Phone",
+            "price": 500
+        },
+        {
+            "name": "Headphones",
+            "price": 120
+        },
+        {
+            "name": "Keyboard",
+            "price": 70
+        }
+    ]
+]
