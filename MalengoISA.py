@@ -89,10 +89,10 @@ def income_return():
             print("Please enter a valid salary")
             continue
         if salary <= 27000:
-            print("Your salary is too low to participate ")
+            print("Your salary is too low to participate. you will be considered in the next round ")
             break
         else:
-            print("You qualify to be part of the Income Share Agreement. ")
+            print("You qualify to be part of the Income Share Agreement. Please proceed to HR ")
             break
 
         #Here we'll calculate the amount of money to be given back
