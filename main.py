@@ -200,7 +200,7 @@ def restaurant_flow(rid):
 
         elif choice == 6:
             if not cart:
-                print("\n  🛒 Your cart is empty. Add some items first!")
+                print("\n  🛒 Your cart is empty. Please Add some items first!")
                 pause()
                 continue
 
@@ -211,7 +211,7 @@ def restaurant_flow(rid):
             subtotal, total = result
 
             if subtotal < restaurant["min_order"]:
-                print(f"\n  ⚠  Minimum order is {fmt_ugx(restaurant['min_order'])}. Add more items.")
+                print(f"\n  ⚠  Minimum order is {fmt_ugx(restaurant['min_order'])}. Add more items please.")
                 pause()
                 continue
 
