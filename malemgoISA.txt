@@ -1,0 +1,3 @@
+DOCUMENTATION.
+
+The Income Share Agreement Simulation should open with a Welcome Page.

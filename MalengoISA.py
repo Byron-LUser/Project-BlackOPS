@@ -57,9 +57,9 @@ def country_choice():
     print("\n========== Welcome to the Income Share Agreement! ==========")
     print("We believe you have read and understood the (TERMS and CONDITIONS) of the Program. ")
     print("\n\tWhich country from the list are you working in currently?")
-    print("\n====================================")
-    print(" \t\t\tCOUNTRIES")
-    print("====================================")
+    print(20 *"===")
+    print("\t\tCOUNTRIES")
+    print(20 *"===")
 
     for my_index, key in enumerate(countries.keys(),  start=1):
         print(f"\t{my_index}.{key}")
@@ -111,9 +111,9 @@ def find_employment():
 #========================================================================
 def to_manage_function():
     #checking Work Status
-    print("\n====================================")
-    print(" \t\t\tEMPLOYMENT STATUS")
-    print("====================================")
+    print(20 *"===")
+    print("\t\t\tEMPLOYMENT STATUS")
+    print(20 *"===")
 
 #checking employment status
 #----------------------------------------------
