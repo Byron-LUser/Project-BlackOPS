@@ -1,3 +1,8 @@
 DOCUMENTATION.
 
-The Income Share Agreement Simulation should open with a Welcome Page.
+The Income Share Agreement Simulation should open with a Welcome Page. Hello Welcome to the ISA, then proceed to ask questions about empployment status.
+#this will clone the Malengo ISA
+The program will give a list of countries and then ask the the alumni to enter the country they are working in.
+They will then be asked to enter their base salary in dollars, and depending on the location of the country in the world, their contribution will be calculated.
+#after choosing they are shown the rates for the country
+t#then they enter their annual salary, and they are told how much they are paying in dollars
