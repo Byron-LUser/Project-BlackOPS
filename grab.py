@@ -57,7 +57,7 @@ class Customer(Restaurant):
         print(f"Here's our Menu.")
         print(f" ")
         print(f"=" * 21)
-        print(f"\t\tMENU")
+        print(f"\tMENU")
         print(f"=" * 21)
 
         for foods in self.our_menu:
