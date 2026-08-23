@@ -43,14 +43,21 @@ class Chef(Restaurant):
     pass
 
 class Customer(Restaurant):
+    #The cart gets filled here
+
     def __init__(self, restaurant_name, name):
         super().__init__(restaurant_name)
         self.name = name
         self.cart = []
     def place_order(self):
-        print(f"{self.name} here: I'd like to place an order.")
+        print(f"\n{self.name} here: I'd like to place an order.")
+        check_out = self.cart
+        check_out.append("Malakwang")
+        print(f"Here is your list of items {check_out}\n")
 
-        # this will display the menu for the customer
+        #--------------------------------------------- 
+        #this will display the menu for the customer
+        #---------------------------------------------
     def display_menu(self):
         # print("\033[0;37;40m")
         print(f"\nWelcome to {self.restaurant_name}. ")
@@ -78,14 +85,11 @@ class Server(Restaurant):
         print(f"I'll be your server for the day.")
     pass
 
+
 my_customer = Customer("Jukon", "Odong")
 my_customer.display_menu()
-our_chef = Chef("Jukon", "Chef Deo")
-our_chef.kitchen_order()
 client1 = Customer("Jukon", "Byron")
 client1.place_order()
-head_server = Server("Jukon", "Corbin")
-head_server.take_order()
 
 
 
