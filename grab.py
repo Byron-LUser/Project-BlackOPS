@@ -53,7 +53,12 @@ class Customer(Restaurant):
         print(f"\n{self.name} here: I'd like to place an order.")
         check_out = self.cart
         check_out.append("Malakwang")
-        print(f"Here is your list of items {check_out}\n")
+
+        print(f"-" * 20)
+        print(f"\tCART")
+        print(f"-" * 20)
+        for index, item in enumerate(check_out, start=1):
+            print(f"\t{index}. {item}\n")
 
         #--------------------------------------------- 
         #this will display the menu for the customer
