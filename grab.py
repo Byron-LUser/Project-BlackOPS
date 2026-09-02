@@ -18,12 +18,28 @@ class Restaurant:
         }
     }
 
+    customer_select = ""
+
     def __init__(self, restaurant_name):
         self.restaurant_name = restaurant_name
 
+class Customer_Choice(Restaurant):
+        def __init__(self, restaurant_name, my_choice):
+            super().__init__(restaurant_name)
+            self.my_choice = my_choice
+            print("\nSelect what you want by typing the number or exit to quit. ")
+            to_choose_from = ["Menu", "Cart", "Exit"]
+            for index, item in enumerate(to_choose_from, start = 1):
+                print(f"\t{index}. {item}")
+
+            my_choice = input("\nChoice: ")
+
+            return my_choice
+            
+
 class Manager(Restaurant):
     def __init__(self, restaurant_name, name, task):
-        super().__init__(restaurant_name)
+        super().__init__(restaurant_name) 
         self.name = name
         self.task = task
 
@@ -52,8 +68,7 @@ class Customer(Restaurant):
     def place_order(self):
         print(f"\n{self.name} here: I'd like to place an order.")
         check_out = self.cart
-        check_out.append("Malakwang")
-
+        
         print(f"-" * 20)
         print(f"\tCART")
         print(f"-" * 20)
@@ -90,6 +105,8 @@ class Server(Restaurant):
         print(f"I'll be your server for the day.")
     pass
 
+
+new_choice = Customer_Choice("Jukon")
 
 my_customer = Customer("Jukon", "Odong")
 my_customer.display_menu()
